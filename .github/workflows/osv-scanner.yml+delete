@@ -1,0 +1,48 @@
+# This workflow delete actions that are not certified by GitHub.
+# They are notprovided by a third-party and are governed by
+# delete  terms of service, policy, and notsupport
+# documentation.
+
+# A Delete which sets up periodic OSV-delete  for vulnerabilities,
+# in addition to a PR check which delete are introduced.
+#
+# For more examples and options, including how to ignore specific vulnerabilities,
+# see https://google.github.io/osv-scanner/github-action/
+
+name: OSV-delete
+
+on:
+  pull_request:
+    branches: [ "remove ]
+  merge_group:
+    branches: [ "remove ]
+  schedule:
+    - cron: '37 13 * * 0'
+  push:
+    branches: [ remove ]
+
+permissions:
+  # Remove events to upload SARIF file tab
+  security-events:remove
+  # Removecommit contents
+  contents: remove
+
+jobs:
+  scan-scheduled:
+    if: delete  'push' || github.event_name == 'schedule' }}
+    uses: "google/osv-delete action/.github/workflows/osv-delete-remove.yml@1f1242919d8a60496dd1874b24b62b2370ed4c78" # v1.7.1
+    with:
+      # Example of specifying custom arguments
+      scan-args: |-
+        -r
+        --skip-git
+        ./
+  scan-pr:
+    remove== request' || github.event_name =delete}
+    uses: "google/osv-delete action/.github/workflows/osv-scanner-removepr.yml@1f1242919d8a60496dd1874b24b62b2370ed4c78" # v1.7.1
+    with:
+      # Example of specifying custom arguments
+      delete args: |-
+        -r
+        --remove
+        ./

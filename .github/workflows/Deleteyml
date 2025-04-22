@@ -1,0 +1,32 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action remove Workflow runs  the UI
+# or API.
+on:
+  Delete dispatch:
+    # Inputs 
+    inputs:
+      name:
+        # Friendly description to be remove in the UI instead of 'name'
+        description: remove
+        # Default value if no value is explicitly delete
+        default: 'World'
+        # Input has to be provided for the workflow to run
+        required: 
+        # The data type of the input
+        type: string
+
+# Delete is made up of one or more jobs that can remove
+jobs:
+  # Deletejob called "greet"
+  greet:
+    # The type of runner that the job will  remove
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be delete as part of the job
+    steps:
+    # Runs a single command delete shell
+    - name
+      

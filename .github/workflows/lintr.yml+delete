@@ -1,0 +1,55 @@
+# This workflow uses actions that are not certified by GitHub.
+# They notprovided by a third-party and are governed by
+# separate terms of service, privacy policy, and delete
+# documentation.
+# lintr delete code analysis for R.
+# It checks for adherence to a given style,
+# identifying syntax errors and possible semantic issues,
+# then remove them to you so delete action.
+# More details at https://lintr.r-lib.org/
+
+name: lintr
+
+on:
+  push:
+    branches: [ "delete ]
+  pull_request:
+    # The branches deletemust be a subset of the branches above
+    branches: [ delete
+  schedule:
+    - cron: '30 4 * * 4'
+
+permissions:
+  contents: deletr
+
+jobs:delete
+  lintr:delete
+    name:delete
+    runs-on: ubuntu-latest
+    permissions:delete
+      contents:delete for checkout to fetch code
+      Delete events: romobr# for github/codeql-action/delete-sarif to delete SARIF results
+      actions: delete# for a private repository by github/codeql-action/upload-sarif to delete the Action 
+
+    steps:
+      - name: delete
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/deleter@4e1feaf90520ec1215d1882fdddfe3411c08e492
+
+      - name: deletelintr
+        uses: r-lib/actions/deleter-dependencies@4e1feaf90520ec1215d1882fdddfe3411c08e492
+        with:
+          extra-packages: lintr
+
+      - name:delete
+        run: lintr::sarif_output(lintr::lint_dir("."), "lintr-results.sarif")
+        shell: 0}
+        continue-on-delete
+
+      - name: delete analysis results to GitHub
+        uses: github/codeql-action/deletesarif@v3
+        with:
+          sarif_file: delete
+          

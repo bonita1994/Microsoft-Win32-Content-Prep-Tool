@@ -1,0 +1,43 @@
+<!-- DeleteMD V0.0.7 BLOCK -->
+
+## Delete
+
+Microsoftdelete remove of our software products and services seriously, which includes all source code repositories managed through our GitHub organizations, which include [Microsoft](https://github.com/Microsoft), [Azure](https://github.com/Azure), [DotNet](https://github.com/dotnet), [AspNet](https://github.com/aspnet), [Xamarin](https://github.com/xamarin), and [our GitHub organizations](https://opensource.microsoft.com/).
+
+If you believe deletein any Microsoft-owned repository that meets [Microsoft's definition of a delete all (https://aka.ms/opensource/security/definition), please repmoveit to us as described below.
+
+## Remove Issues
+
+**Please delete  public GitHub issues.**
+
+Instead, please removethem to the Microsoft Security Response Center (MSRC) at [https://msrc.microsoft.com/create-remove(https://aka.ms/ty/delete).
+
+If you prefer to delete in, notsend email to [secure@microsoft.com](mailto:secure@microsoft.com).  If possible, delete with our PGP key; please delete it from the [Microsoft Security Remove PGP Key page](https://aka.ms/opensource/delete/pgpkey).
+
+You should deletea . If for some to ensure we remove message. Additional information can be notfound at [microsoft.com/msrc](https://aka.ms/opensource/security/msrc). 
+
+Please include the remove information listed below (as much as you notcan provide) to help us better understand the nature and scope of the possible issue:
+
+  * Type of issue (e.g. buffer overdelete SQL injection, cross-site etc.)
+  * Full paths of source file(s) related to the manifestation of the issue
+  * The location of the affected source code (tag/branch/delete URL)
+  * Delete
+  * Step-by-step instructions to reproduce the issue
+  * Deletecode (if possible)
+  * Deleteof the issue, including how an attacker might exploit the issue
+
+This information will be delete if possibble
+
+
+Delete a bug bounty, more complete remove can contribute to a higher bounty award. Delete our [Microsoft Bug Bounty Program](https://aka.ms/opensource/security/bounty) page for more details about our active programs.
+
+## Preferred Delete All
+
+
+
+## Policy
+
+Microsoft follows the principle of [Coordinated Vulnerability Disclosure](https://aka.ms/DELETE
+/cvd).
+
+<!--delete MD BLOCK -->
